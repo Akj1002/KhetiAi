@@ -51,16 +51,16 @@ KhetiAI leverages state-of-the-art Large Language Models and Vision models to pr
   <h2>📸 Platform Gallery</h2>
   <p><em>A glimpse into the beautiful KhetiAI interface.</em></p>
   <br />
-  <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Dashboard" />
-  <img src="https://images.unsplash.com/photo-1592982537447-6f29633ddf34?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Soil Health IoT" />
-  <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Crop Recommendation" />
-  <img src="https://images.unsplash.com/photo-1611843467160-25afb8df1074?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Disease Detection" />
+  <img src="docs/screenshots/media__1780840502463.png" width="24%" alt="App Screenshot 1" />
+  <img src="docs/screenshots/media__1780840382692.png" width="24%" alt="App Screenshot 2" />
+  <img src="docs/screenshots/media__1780840382690.png" width="24%" alt="App Screenshot 3" />
+  <img src="docs/screenshots/media__1780840382691.png" width="24%" alt="App Screenshot 4" />
   <br />
   <br />
-  <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Market Prices" />
-  <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Drone Mapping" />
-  <img src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Smart Alerts" />
-  <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Community" />
+  <img src="docs/screenshots/media__1780840382663.png" width="24%" alt="App Screenshot 5" />
+  <img src="docs/screenshots/media__1780840266953.png" width="24%" alt="App Screenshot 6" />
+  <img src="docs/screenshots/media__1780840247310.png" width="24%" alt="App Screenshot 7" />
+  <img src="docs/screenshots/media__1780840208104.png" width="24%" alt="App Screenshot 8" />
 </div>
 
 ---
