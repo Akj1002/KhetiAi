@@ -122,7 +122,7 @@ PORT=8000
 ---
 
 ## 🛡️ License & Telemetry
-KhetiAI is released under the **MIT License**.
+KhetiAI is a proprietary software platform. **All Rights Reserved.**
 This project was strictly designed for high-performance, real-time agricultural operations and does not natively collect or track external PII (Personally Identifiable Information) beyond the localized deployment environment.
 
 <div align="center">
