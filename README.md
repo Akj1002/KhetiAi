@@ -16,29 +16,6 @@
 
 <br />
 
-<div align="center">
-  <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Dashboard" />
-  <img src="https://images.unsplash.com/photo-1592982537447-6f29633ddf34?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Soil Health IoT" />
-  <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Crop Recommendation" />
-  <br />
-  <br />
-  <img src="https://images.unsplash.com/photo-1611843467160-25afb8df1074?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Disease Detection" />
-  <img src="https://images.unsplash.com/photo-1554902843-260acd0993f8?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Govt Schemes" />
-  <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Market Prices" />
-  <br />
-  <br />
-  <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Drone Mapping" />
-  <img src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Smart Alerts" />
-  <img src="https://images.unsplash.com/photo-1530836369250-ef71a3f5e481?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="KhetiAI Chatbot" />
-  <br />
-  <br />
-  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Teleconsultation" />
-  <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Community" />
-  <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=400&h=250&q=80" width="30%" alt="Irrigation" />
-</div>
-
-<br />
-
 ## 🌟 Comprehensive System Overview
 
 Farming today is plagued by unpredictable weather, rapidly spreading crop diseases, and a lack of unified real-time data. **KhetiAI** solves this by consolidating every aspect of agricultural management into one master platform.
@@ -52,8 +29,8 @@ By establishing persistent, bidirectional WebSocket connections, KhetiAI complet
 ### 1. True Real-Time Architecture (WebSockets)
 The core infrastructure of KhetiAI runs on high-performance FastAPI WebSockets, streaming JSON payloads continuously.
 * **Telemetry Dashboard**: Utilizing `recharts`, the dashboard renders live streams of soil moisture, temperature, wind speed, and crop health metrics dynamically.
-* **Bi-directional Irrigation Control**: Users can toggle farm sector pumps directly from the UI. The action is securely transmitted to the backend, processed, and the new state is broadcasted back to all connected devices, instantly turning the UI pump indicators green.
-* **Live Community Forum**: A fully reactive multiplayer feed. KhetiAI features a specialized `ConnectionManager` that broadcasts new posts instantly to every active farmer on the platform, fostering an active community.
+* **Bi-directional Irrigation Control**: Users can toggle farm sector pumps directly from the UI. The action is securely transmitted to the backend, processed, and the new state is broadcasted back to all connected devices.
+* **Live Community Forum**: A fully reactive multiplayer feed. KhetiAI features a specialized `ConnectionManager` that broadcasts new posts instantly to every active farmer on the platform.
 * **Smart Alerts Timeline**: Powered by Framer Motion, critical weather warnings and pest alerts slide effortlessly into the user's view the millisecond they are issued by the backend.
 
 ### 2. Google Generative AI Integrations (Gemini 3.5)
@@ -63,10 +40,28 @@ KhetiAI leverages state-of-the-art Large Language Models and Vision models to pr
 
 ### 3. Advanced Farm Tools & Analytics
 * **Predictive Crop Recommendation**: An interactive interface featuring N, P, K, pH, and rainfall sliders. The system computes and predicts the most profitable and biologically viable crop to plant.
-* **Autonomous Drone Mapping**: Built on `react-leaflet`, this module allows farm managers to draw autonomous flight paths over their land and view simulated NDVI (Normalized Difference Vegetation Index) imaging to spot crop stress from above.
-* **Government Schemes Auto-Matcher**: An "AI Eligibility Matcher" that dynamically scores financial and credit schemes (e.g., "95% Match") based entirely on the user's specific farm profile, state, and acreage.
+* **Autonomous Drone Mapping**: Built on `react-leaflet`, this module allows farm managers to draw autonomous flight paths over their land and view simulated NDVI imaging.
+* **Government Schemes Auto-Matcher**: An "AI Eligibility Matcher" that dynamically scores financial and credit schemes based entirely on the user's specific farm profile.
 * **Agri-Expert Teleconsultation**: A premium video call interface allowing direct, face-to-face consultations with verified plant pathologists and agronomists.
 * **Farm Task Board**: A Kanban-style drag-and-drop workspace dedicated to managing labor, logistics, and daily operations efficiently.
+
+---
+
+<div align="center">
+  <h2>📸 Platform Gallery</h2>
+  <p><em>A glimpse into the beautiful KhetiAI interface.</em></p>
+  <br />
+  <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Dashboard" />
+  <img src="https://images.unsplash.com/photo-1592982537447-6f29633ddf34?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Soil Health IoT" />
+  <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Crop Recommendation" />
+  <img src="https://images.unsplash.com/photo-1611843467160-25afb8df1074?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Disease Detection" />
+  <br />
+  <br />
+  <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Market Prices" />
+  <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Drone Mapping" />
+  <img src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Smart Alerts" />
+  <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&h=250&q=80" width="24%" alt="Community" />
+</div>
 
 ---
 
