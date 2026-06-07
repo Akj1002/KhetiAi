@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pymongo
+requests
+python-multipart
+websockets
+numpy
+opencv-python
+google-generativeai
+python-dotenv
