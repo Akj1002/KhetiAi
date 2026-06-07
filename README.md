@@ -26,24 +26,54 @@ KhetiAI employs a decoupled, asynchronous client-server architecture:
 
 ---
 
-## ⚡ Core Subsystems & Modules
+## ⚡ Comprehensive Feature & Page Breakdown
 
-### 1. Real-Time Telemetry & Smart IoT Control
-KhetiAI completely moves away from HTTP polling in favor of persistent TCP WebSocket connections, ensuring a latency of under 50ms for critical farm operations.
-* **Dashboard Hub (`/ws/dashboard`)**: Broadcasts high-frequency state updates containing synthesized soil moisture, temperature, wind speed, and general crop health indices. 
-* **Irrigation Control System (`/ws/irrigation`)**: A bidirectional stream allowing users to toggle agricultural water pumps geographically (by Sector). The backend processes state transitions (Idle -> Pumping) and synchronizes the state across all connected remote operators.
-* **Alerts Pipeline (`/ws/alerts`)**: An asynchronous push-notification pipeline that delivers structurally validated JSON alerts directly to the UI, driving Framer Motion layout injections.
+KhetiAI is composed of over 14 specialized modules, each engineered to tackle a specific facet of modern agricultural management.
 
-### 2. Generative AI Diagnostics (Vision)
-* **Plant Pathology Engine**: Users upload localized leaf imagery which is encoded and securely transmitted to the Gemini Vision API. The model evaluates necrotic lesions and discoloration against its trained corpus, returning a precise disease nomenclature, an AI confidence interval (e.g., 94%), and actionable biological/chemical treatment protocols.
+### 1. 📊 Real-Time Dashboard (`/dashboard`)
+The central nervous system of the farm. Instead of static HTTP requests, this page maintains a persistent `/ws/dashboard` WebSocket connection. It renders live telemetry (Soil Moisture, Temperature, Wind Speed) using `recharts`. It also displays a dynamic Farm Health grid and an automated Revenue vs. Expenses financial tracker, updating instantly as IoT data flows in.
 
-### 3. Predictive Crop Modeling
-* **Agronomic Recommendation Engine**: An interactive deterministic interface where users input N-P-K (Nitrogen, Phosphorus, Potassium) levels, pH variance, and target moisture capacity. A predictive model correlates these vectors to output the most biologically viable and economically profitable crop selections.
+### 2. 🤖 KhetiAI Chatbot (`/dashboard/chatbot`)
+A persistent, intelligent conversational agent powered by Google Gemini 3.5. Unlike generic bots, it maintains a localized context window. Farmers can ask complex agronomic questions (e.g., "What is the best time to sow wheat in Punjab?") and receive highly accurate, conversational advice tailored to their specific climatic zone.
 
-### 4. Auxiliary Operations
-* **Autonomous Drone Flight Mapping**: Integrated with `react-leaflet` to plan geospatial flight paths, coupled with theoretical NDVI (Normalized Difference Vegetation Index) thermal overlays.
-* **Multiplayer Community Feed**: A decentralized, real-time message bus (`/ws/community`) allowing asynchronous communication between farm operators, agronomists, and stakeholders.
-* **Dynamic Government Subsidy Matcher**: An algorithm that calculates an "Eligibility Score" based on state-level APIs and farmer profiles to match users with financial credit models.
+### 3. 📈 Market Prices & Economy (`/dashboard/market`)
+A financial hub tracking live agricultural commodity metrics. It displays the current trading prices for critical crops (Wheat, Rice, Corn, Sugarcane) alongside historical trends, supply-demand volume ratios, and daily price variance to help farmers maximize their profit margins.
+
+### 4. 🏛️ Government Schemes (`/dashboard/schemes`)
+Navigating bureaucracy is difficult. This module features a dynamic "Eligibility Matcher" that algorithmically scores and filters hundreds of state and federal agricultural subsidies, grants, and credit schemes based entirely on the user's specific farm profile (acreage, crop type, region).
+
+### 5. 🧪 Smart Soil Health (`/dashboard/soil`)
+A dedicated IoT analytics page for subterranean metrics. It tracks N-P-K (Nitrogen, Phosphorus, Potassium) ratios and pH variance across multiple farm sectors. It includes predictive warnings for soil degradation and nutrient depletion, allowing for precise fertilizer application.
+
+### 6. 💧 Interactive Irrigation Control (`/dashboard/irrigation`)
+A bidirectional command module for water management. Connected to `/ws/irrigation`, farm operators can remotely toggle water pumps on or off across different sectors. The state change is processed by the FastAPI backend and instantly synchronized across all connected devices, preventing overlapping commands or water waste.
+
+### 7. 🐄 Livestock GPS Tracker (`/dashboard/livestock`)
+A geographic monitoring tool plotting livestock coordinates on an interactive satellite map. It tracks biometric data such as animal heart rates and body temperatures, instantly flagging animals that show signs of distress, illness, or have wandered outside the geo-fenced boundaries.
+
+### 8. 📸 AI Disease Diagnostics (`/dashboard/disease`)
+A drag-and-drop diagnostic pipeline. When a user uploads an image of an infected leaf, the FastAPI backend securely transmits the binary payload to Google's Gemini Vision API. The model evaluates necrotic lesions and returns a precise biological disease nomenclature, an AI confidence score, and a multi-step biological/chemical treatment protocol.
+
+### 9. 🌱 Predictive Crop Recommendation (`/dashboard/crop-recommendation`)
+A deterministic Machine Learning interface where users manually input environmental vectors (Nitrogen, Phosphorus, Potassium, pH, and average Rainfall). The system computes these variables against agronomic databases to predict the most profitable and biologically viable crop to plant for the upcoming season.
+
+### 10. 🚁 Autonomous Drone Mapping (`/dashboard/drone`)
+Built on `react-leaflet`, this interface allows farm managers to draw geo-spatial flight paths over their acreage. It calculates estimated flight times, battery requirements, and displays simulated NDVI (Normalized Difference Vegetation Index) thermal overlays to detect invisible crop stress.
+
+### 11. 🔔 Smart Alerts Pipeline (`/dashboard/alerts`)
+A chronological, asynchronous push-notification feed powered by `/ws/alerts`. Critical system events—such as impending frost, localized pest outbreaks, or IoT equipment failures—slide effortlessly into the user's view the millisecond they are triggered, utilizing hardware-accelerated Framer Motion layout injections.
+
+### 12. 👨‍🌾 Multiplayer Community Feed (`/dashboard/community`)
+A decentralized, real-time message board (`/ws/community`). When a farmer posts an update, asks for advice, or shares a tip, the payload is routed through a central WebSocket `ConnectionManager` and instantly broadcast to the screens of all active users on the platform, fostering a highly collaborative rural network.
+
+### 13. 📋 Farm Task Board (`/dashboard/tasks`)
+A Kanban-style drag-and-drop workspace (To Do, In Progress, Done). It allows farm managers to digitize their daily operations, assign specific labor tasks (e.g., "Repair Fence in Sector 2", "Harvest Wheat"), set priority levels, and track logistical progress in real-time.
+
+### 14. 📞 Agri-Expert Teleconsultation (`/dashboard/teleconsult`)
+A premium, integrated video-call scheduling interface. It allows farmers to book and conduct direct 1-on-1 consultations with verified plant pathologists, veterinarians, and agronomists to resolve complex issues that require human expertise.
+
+### 15. 🌍 Seamless Multilingual Support
+Recognizing the diverse linguistic landscape of agriculture, KhetiAI utilizes `react-i18next` to offer instant, zero-reload translation. Farmers can seamlessly toggle the entire platform interface between English and Hindi (हिन्दी) to ensure maximum accessibility and usability.
 
 ---
 
