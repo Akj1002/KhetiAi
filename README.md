@@ -1,57 +1,142 @@
 <div align="center">
   <h1>🌾 KhetiAI</h1>
-  <p><strong>A Next-Generation AI-Powered Farm Management & Intelligence Platform</strong></p>
+  <p><strong>The Next-Generation AI-Powered Farm Management & Real-Time Intelligence Platform</strong></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white" alt="FastAPI" />
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="WebSocket" />
+  </p>
 </div>
+
+<br />
+
+## 🌟 Overview & Vision
+
+**KhetiAI** is a comprehensive, real-time agricultural intelligence platform built to empower modern farmers with state-of-the-art AI diagnostics, real-time IoT sensor telemetry, and actionable market insights. 
+
+Farming today is plagued by unpredictable weather, crop diseases, and a lack of real-time data. KhetiAI bridges this gap by unifying all farm operations into a single, intuitive dashboard. From autonomous drone mapping and predictive crop recommendations to a vibrant multiplayer community forum, KhetiAI equips farmers with enterprise-grade tools tailored for ease of use.
 
 <br />
 
 <div align="center">
-  <img src="https://via.placeholder.com/300x200.png?text=Dashboard" width="30%" alt="Dashboard" />
-  <img src="https://via.placeholder.com/300x200.png?text=Soil+Health+IoT" width="30%" alt="Soil Health IoT" />
-  <img src="https://via.placeholder.com/300x200.png?text=Crop+Recommendation" width="30%" alt="Crop Recommendation" />
+  <h2>📸 Platform Gallery</h2>
+  <p><em>(Replace these placeholders with actual screenshots of your application)</em></p>
   <br />
-  <img src="https://via.placeholder.com/300x200.png?text=Disease+Detection" width="30%" alt="Disease Detection" />
-  <img src="https://via.placeholder.com/300x200.png?text=Govt+Schemes" width="30%" alt="Govt Schemes" />
-  <img src="https://via.placeholder.com/300x200.png?text=Market+Prices" width="30%" alt="Market Prices" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Command+Dashboard" width="30%" alt="Dashboard" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Smart+Soil+IoT" width="30%" alt="Soil Health IoT" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Crop+Recommendation" width="30%" alt="Crop Recommendation" />
   <br />
-  <img src="https://via.placeholder.com/300x200.png?text=Drone+Mapping" width="30%" alt="Drone Mapping" />
-  <img src="https://via.placeholder.com/300x200.png?text=Smart+Alerts" width="30%" alt="Smart Alerts" />
-  <img src="https://via.placeholder.com/300x200.png?text=KhetiAI+Chatbot" width="30%" alt="KhetiAI Chatbot" />
   <br />
-  <img src="https://via.placeholder.com/300x200.png?text=Teleconsultation" width="30%" alt="Teleconsultation" />
-  <img src="https://via.placeholder.com/300x200.png?text=Community+Forum" width="30%" alt="Community" />
-  <img src="https://via.placeholder.com/300x200.png?text=Irrigation+Control" width="30%" alt="Irrigation" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=AI+Disease+Detection" width="30%" alt="Disease Detection" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Govt+Schemes+Matcher" width="30%" alt="Govt Schemes" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Live+Market+Prices" width="30%" alt="Market Prices" />
+  <br />
+  <br />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Drone+Flight+Planner" width="30%" alt="Drone Mapping" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Real-Time+Alerts" width="30%" alt="Smart Alerts" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=KhetiAI+Assistant" width="30%" alt="KhetiAI Chatbot" />
+  <br />
+  <br />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Teleconsultation" width="30%" alt="Teleconsultation" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Multiplayer+Community" width="30%" alt="Community" />
+  <img src="https://placehold.co/400x250/0f172a/22c55e?text=Irrigation+Pump+Control" width="30%" alt="Irrigation" />
 </div>
 
 <br />
 
-## 🌟 Overview
-**KhetiAI** is a comprehensive, real-time farm intelligence platform built to digitize and empower modern farming. Built with a React (Vite) frontend and a FastAPI backend, KhetiAI seamlessly integrates AI models, live WebSocket telemetry, and an intuitive user interface to help farmers maximize their yield, prevent diseases, and stay updated with the latest market trends.
+## 🚀 Deep Dive: Core Features
 
-## 🚀 Key Features & Pages
+### 1. True Real-Time Architecture (WebSockets)
+KhetiAI completely abandons static mock data in favor of live WebSocket streams.
+* **Telemetry Dashboard**: Uses `recharts` to render live streams of soil moisture, wind speed, and crop health in real-time.
+* **Smart Alerts**: A Framer Motion powered timeline that injects critical weather and pest alerts instantly.
+* **Bi-directional Irrigation Control**: Toggle farm sector pumps from the UI. The action is sent to the backend, processed, and the new state is broadcasted back to all connected devices.
+* **Live Community Forum**: A fully reactive multiplayer feed where farmers can post and receive updates without refreshing.
 
-* **📊 Dashboard**: The centralized command center. Features live mini-charts for soil moisture, temperature, wind speed, and crop health powered by real-time WebSockets, alongside a live farm map and market snapshots.
-* **🌱 Crop Recommendation**: Recommends the optimal crop based on interactive N, P, K, pH, and rainfall sliders using an integrated AI model, complete with projected yield metrics.
-* **🦠 Disease Detection**: A drag-and-drop diagnostic tool. Farmers can upload images of crop leaves, and the Gemini 3.5 AI instantly analyzes the image to identify diseases and prescribe treatments.
-* **💬 KhetiAI Assistant**: A specialized AI chatbot tailored for agricultural queries. It remembers context and provides localized farming advice.
-* **📡 Smart Farm IoT**:
-  * **Soil Health**: A real-time topography grid mapped to live IoT sensor data for targeted nutrient management.
-  * **Irrigation**: Interactive sector controls with an AI Auto-Pilot toggle to manage water distribution over WebSockets.
-  * **Livestock Tracking**: Live GPS coordinates, heart rate, and temperature tracking for cattle.
-* **🚁 Drone Mapping**: An autonomous flight planner utilizing `react-leaflet` to map farm sectors, coupled with an NDVI (Normalized Difference Vegetation Index) analysis mock for stress detection.
-* **🏛️ Government Schemes**: An AI Eligibility Matcher that filters and scores financial, credit, and organic subsidies based on the farmer's profile.
-* **📈 Market Prices**: A live chart of commodity prices (Wheat, Rice, Maize) powered by `recharts` to help farmers decide the best time to sell.
-* **🚨 Smart Alerts**: A vertical chronological timeline that pushes critical weather and pest alerts to the farmer via live WebSockets.
-* **📋 Task Board**: A Kanban-style drag-and-drop interface for farm managers to organize laborers and daily operations (To Do, In Progress, Done).
-* **👨‍⚕️ Teleconsultation**: A premium video call mock UI that allows farmers to connect directly with verified agronomists and plant pathologists.
-* **🤝 Community**: A Reddit-style multiplayer forum where farmers can post updates, ask questions, upvote, and share knowledge in real time.
+### 2. Google Generative AI Integrations
+* **Disease Diagnostics**: Upload an image of a diseased leaf. Our FastAPI backend securely transmits the image to Google's Gemini 3.5 model to return a structured diagnosis, confidence score, and treatment plan.
+* **KhetiAI Chatbot**: A persistent farming assistant that understands context and can converse about local agricultural queries.
 
-## 🛠️ Tech Stack
-* **Frontend**: React.js (Vite), TailwindCSS, Framer Motion, Recharts, React-Leaflet, Lucide React.
-* **Backend**: Python, FastAPI, Uvicorn, WebSockets.
-* **AI Integration**: Google Generative AI (Gemini Flash).
+### 3. Smart Tools & Analytics
+* **Crop Recommendation**: An interactive UI with sliders for N, P, K, pH, and rainfall. A dedicated ML model predicts the most profitable crop to plant.
+* **Drone Mapping**: Built on `react-leaflet`, allowing users to draw autonomous flight paths over their sectors and view mock NDVI (thermal/stress) imaging.
+* **Government Schemes**: An "AI Eligibility Matcher" that dynamically scores financial and credit schemes (e.g., 95% Match) based on the user's farm profile.
+* **Farm Task Board**: A Kanban drag-and-drop board for managing farm laborers.
 
-## 💻 Running Locally
-1. Clone the repository.
-2. Setup the backend: Navigate to `Backend/`, install requirements via `pip install -r req.txt`, and start the server using `uvicorn main:app --reload`.
-3. Setup the frontend: Navigate to `Frontend/`, install dependencies using `npm install`, and start the dev server via `npm run dev`.
+## 🛠️ Technology Stack
+
+### Frontend Client
+* **React.js (Vite)**: Lightning-fast development server and optimized production builds.
+* **TailwindCSS**: Utility-first styling for the beautiful, premium dark-mode aesthetic.
+* **Framer Motion**: Smooth, layout-aware micro-animations.
+* **Lucide React**: Crisp, modern iconography.
+* **Recharts & React-Leaflet**: Data visualization and mapping.
+
+### Backend Server
+* **Python 3.10+**: Core backend logic.
+* **FastAPI**: Extremely fast asynchronous API framework.
+* **Uvicorn**: ASGI server to handle complex WebSocket connections.
+* **Google Generative AI**: Gemini models for advanced inference.
+
+## 📂 Project Structure
+
+```text
+KhetiAI/
+├── Backend/
+│   ├── main.py              # FastAPI server, WebSocket Hubs, AI routing
+│   ├── .env                 # API Keys (Excluded from Git)
+│   └── req.txt              # Python dependencies
+├── Frontend/
+│   ├── src/
+│   │   ├── components/      # Reusable UI (Sidebar, Layout)
+│   │   ├── pages/           # All 15+ Core Application Pages
+│   │   ├── main.jsx         # React DOM Entry
+│   │   └── index.css        # Global Tailwind tokens
+│   ├── vite.config.js       # Vite Bundler Config
+│   └── package.json         # Node.js dependencies
+└── README.md                # Project documentation
+```
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+* Node.js (v18+)
+* Python (v3.10+)
+* A valid Google Gemini API Key
+
+### 1. Setup the Backend
+```bash
+cd Backend
+python -m venv venv
+# On Windows: venv\Scripts\activate
+# On Mac/Linux: source venv/bin/activate
+pip install -r req.txt
+```
+
+Create a `.env` file in the `Backend` directory and add your key:
+```env
+GEMINI_API_KEY=your_actual_api_key_here
+```
+
+Start the FastAPI Server:
+```bash
+uvicorn main:app --reload
+```
+*(The server will run on `http://127.0.0.1:8000`)*
+
+### 2. Setup the Frontend
+Open a new terminal and navigate to the frontend:
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+*(The React app will launch on `http://localhost:5173` or `5174`)*
+
+---
+<div align="center">
+  <p>Made with ❤️ for the future of farming.</p>
+</div>
