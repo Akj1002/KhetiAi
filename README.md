@@ -28,7 +28,7 @@ KhetiAI employs a decoupled, asynchronous client-server architecture:
 
 ## ⚡ Comprehensive Feature & Page Breakdown
 
-KhetiAI is composed of over 14 specialized modules, each engineered to tackle a specific facet of modern agricultural management.
+KhetiAI is composed of over **30 specialized modules**, each engineered to tackle a specific facet of modern agricultural management.
 
 ### 1. 📊 Real-Time Dashboard (`/dashboard`)
 The central nervous system of the farm. Instead of static HTTP requests, this page maintains a persistent `/ws/dashboard` WebSocket connection. It renders live telemetry (Soil Moisture, Temperature, Wind Speed) using `recharts`. It also displays a dynamic Farm Health grid and an automated Revenue vs. Expenses financial tracker, updating instantly as IoT data flows in.
@@ -74,6 +74,51 @@ A premium, integrated video-call scheduling interface. It allows farmers to book
 
 ### 15. 🌍 Seamless Multilingual Support
 Recognizing the diverse linguistic landscape of agriculture, KhetiAI utilizes `react-i18next` to offer instant, zero-reload translation. Farmers can seamlessly toggle the entire platform interface between English and Hindi (हिन्दी) to ensure maximum accessibility and usability.
+
+### 16. 🚚 Supply Chain Tracking (`/dashboard/supply-chain`)
+Track agricultural produce from the farm straight to the consumer's table, maintaining transparency and logistical accountability.
+
+### 17. 🚜 Machinery Rental (`/dashboard/machinery`)
+An Uber-like marketplace for booking and renting heavy agricultural machinery, tractors, and harvesters on demand.
+
+### 18. 💰 Agri-Finance & Loans (`/dashboard/finance`)
+A dedicated financial center to apply for micro-loans, monitor credit lines, and track repayment schedules specifically tailored for farmers.
+
+### 19. 🛡️ Crop Insurance (`/dashboard/insurance`)
+Browse, purchase, and manage specialized agricultural insurance policies, with features to securely report damage via satellite imagery.
+
+### 20. 📦 Farm Inventory Management (`/dashboard/inventory`)
+A digital ledger to track granular stock levels for seeds, fertilizers, pesticides, and other critical operational resources.
+
+### 21. 🍃 Carbon Credits Dashboard (`/dashboard/carbon-credits`)
+Calculate your farm's carbon sequestration offsets and trade generated carbon credits directly on environmental exchanges.
+
+### 22. 🏢 B2B Marketplace (`/dashboard/b2b-market`)
+A direct-selling portal designed to connect farmers directly with commercial buyers, restaurants, and wholesale distributors, eliminating the middleman.
+
+### 23. 📊 Precision Analytics (`/dashboard/analytics`)
+Deep-dive historical yield data, profitability charts, and field heatmaps to optimize future farming decisions.
+
+### 24. 🌾 Seed Sourcing & Genetics (`/dashboard/seeds`)
+A marketplace and database to find, compare, and purchase high-yield, climate-resilient crop seeds from local and national vendors.
+
+### 25. 🌊 Water Management (`/dashboard/water-management`)
+Detailed oversight of the farm's aquatic resources, tracking borewell depth, reservoir volumes, and automated water usage tracking.
+
+### 26. 📉 Yield Prediction Models (`/dashboard/yield-prediction`)
+AI-driven projections calculating expected seasonal harvest outputs based on real-time fluctuating environmental variables.
+
+### 27. ⛺ Agri-Tourism (`/dashboard/agri-tourism`)
+A platform for farmers to list their estates for public visits, educational workshops, or immersive rural farm-stays.
+
+### 28. 🎪 Local Events & Fairs (`/dashboard/events`)
+A dynamically updated calendar to discover upcoming regional agricultural expos, mandi fairs, and farmer meetups.
+
+### 29. 👷‍♂️ Labor Management (`/dashboard/labor`)
+A Human Resources dashboard for hiring seasonal farm workers, tracking daily attendance, and automatically managing daily wage payouts.
+
+### 30. ✈️ Export Logistics (`/dashboard/export`)
+A specialized workflow to handle the complex documentation, regulatory compliance, and shipping tracking required for international agricultural exports.
 
 ---
 
