@@ -4,7 +4,9 @@ import { useTranslation } from "react-i18next";
 import { 
   LayoutDashboard, CloudRain, Sprout, ShieldAlert, MessageSquare,
   TrendingUp, Landmark, TestTube, Droplet, MapPin, Navigation, 
-  BellRing, Users, ListTodo, Video, LogOut, Languages 
+  BellRing, Users, ListTodo, Video, LogOut, Languages,
+  Truck, Tractor, Wallet, Shield, PackageOpen, Leaf, Building2,
+  BarChart2, Wheat, Waves, LineChart, Tent, CalendarDays, HardHat, PlaneTakeoff
 } from "lucide-react";
 
 const Sidebar = () => {
@@ -38,6 +40,8 @@ const Sidebar = () => {
       links: [
         { name: t("Market Prices"), path: "/dashboard/market", icon: <TrendingUp size={18} /> },
         { name: t("Gov Schemes"), path: "/dashboard/schemes", icon: <Landmark size={18} /> },
+        { name: t("B2B Market"), path: "/dashboard/b2b-market", icon: <Building2 size={18} /> },
+        { name: t("Export Logistics"), path: "/dashboard/export", icon: <PlaneTakeoff size={18} /> },
       ]
     },
     {
@@ -45,13 +49,36 @@ const Sidebar = () => {
       links: [
         { name: t("Soil Health"), path: "/dashboard/soil", icon: <TestTube size={18} /> },
         { name: t("Irrigation"), path: "/dashboard/irrigation", icon: <Droplet size={18} /> },
+        { name: t("Water Mgmt"), path: "/dashboard/water-management", icon: <Waves size={18} /> },
         { name: t("Livestock"), path: "/dashboard/livestock", icon: <MapPin size={18} /> },
+        { name: t("Drone Mapping"), path: "/dashboard/drone", icon: <Navigation size={18} /> },
       ]
     },
     {
-      title: t("Monitoring & Community"),
+      title: t("Supply & Inventory"),
       links: [
-        { name: t("Drone Mapping"), path: "/dashboard/drone", icon: <Navigation size={18} /> },
+        { name: t("Supply Chain"), path: "/dashboard/supply-chain", icon: <Truck size={18} /> },
+        { name: t("Farm Inventory"), path: "/dashboard/inventory", icon: <PackageOpen size={18} /> },
+        { name: t("Seed Sourcing"), path: "/dashboard/seeds", icon: <Wheat size={18} /> },
+      ]
+    },
+    {
+      title: t("Finance & Analytics"),
+      links: [
+        { name: t("Agri Finance"), path: "/dashboard/finance", icon: <Wallet size={18} /> },
+        { name: t("Crop Insurance"), path: "/dashboard/insurance", icon: <Shield size={18} /> },
+        { name: t("Carbon Credits"), path: "/dashboard/carbon-credits", icon: <Leaf size={18} /> },
+        { name: t("Analytics"), path: "/dashboard/analytics", icon: <BarChart2 size={18} /> },
+        { name: t("Yield Prediction"), path: "/dashboard/yield-prediction", icon: <LineChart size={18} /> },
+      ]
+    },
+    {
+      title: t("Services & Community"),
+      links: [
+        { name: t("Machinery"), path: "/dashboard/machinery", icon: <Tractor size={18} /> },
+        { name: t("Agri Tourism"), path: "/dashboard/agri-tourism", icon: <Tent size={18} /> },
+        { name: t("Local Events"), path: "/dashboard/events", icon: <CalendarDays size={18} /> },
+        { name: t("Labor Mgmt"), path: "/dashboard/labor", icon: <HardHat size={18} /> },
         { name: t("Smart Alerts"), path: "/dashboard/alerts", icon: <BellRing size={18} /> },
         { name: t("Community"), path: "/dashboard/community", icon: <Users size={18} /> },
         { name: t("Task Board"), path: "/dashboard/tasks", icon: <ListTodo size={18} /> },
